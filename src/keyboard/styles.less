@@ -1,0 +1,72 @@
+.mni-keyboard {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  @kh: 40vh;
+  height: @kh;
+  bottom: 0px;
+  background-color: #fff;
+  user-select: none;
+
+  @th: 5vh;
+  .mni-valueReview {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 2px;
+    flex-grow: 0;
+    height: @th;
+    font-size: 3vh;
+    vertical-align: middle;
+  }
+
+  .mni-tdiv {
+    flex-grow: 1;
+    background-color: red;
+    table {
+      width: 100%;
+      height: calc(@kh - @th);
+      background-color: white;
+      tr {
+        td {
+          text-align: center;
+          width: 24.9999999%;
+          height: 25%;
+          border-right: 1px solid #d9d9d9;
+          border-bottom: 1px solid #d9d9d9;
+          font-size: 3vh;
+
+          &:active {
+            background-color: #ececec;
+          }
+        }
+      }
+    }
+  }
+
+  .mni-keybordReturn,
+  .mni-keybordStop {
+    width: 30px;
+    height: 30px;
+    margin: 0px auto;
+    color: white;
+  }
+  .mni-keybordReturn {
+    background-image: url(./imgs/keybord-return.png);
+    background-size: 100% 90%;
+  }
+  .mni-keybordStop {
+    background-image: url(./imgs/keybord-stop.png);
+    background-size: 90% 90%;
+  }
+  .mni-pay {
+    color: #ffffff;
+    font-size: 120%;
+    background-color: #1aad19;
+  }
+  .mni-pay:active {
+    background-color: #179b16;
+  }
+}
